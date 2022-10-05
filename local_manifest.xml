@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote name="a3hub"
+            fetch="https://github.com/a3project"
+            revision="android-13" />
+    <remote name="ashub"
+            fetch="ssh://git@github.com/a3project"
+            revision="android-13" />
+    <remote name="a3lab"
+            fetch="https://gitlab.com/a3project"
+            revision="android-13" />
+    <remote name="aslab"
+            fetch="ssh://git@gitlab.com/a3project"
+            revision="android-13" />
+    <remote name="extrahub"
+            fetch="https://github.com" />
+
+    <!-- Remove -->
+    <remove-project name="LineageOS/android_system_libhidl" />
+    <remove-project name="LineageOS/android_hardware_interfaces" />
+    <remove-project name="RiceDroid/android_build_soong" />
+    <remove-project name="RiceDroid/android_vendor_rice" />
+
+    <!-- Device -->
+    <project path="device/xiaomi/rosy" name="ricedroid_device_rosy" remote="ashub" revision="thirteen" clone-depth="1" />
+
+    <!-- Kernel -->
+    <project path="kernel/xiaomi/rosy" name="android_kernel_xiaomi_rosy" remote="a3hub" clone-depth="1" />
+	
+    <!-- Vendor -->
+    <project path="vendor/xiaomi/rosy" name="android_vendor_xiaomi_rosy" remote="a3hub" clone-depth="1" />
+	
+    <!-- Compiler -->
+    <project path="prebuilts/clang/host/linux-x86/proton-clang" name="proton-clang" remote="a3hub" revision="master" clone-depth="1" />
+
+    <!-- Extra -->
+    <project path="build/soong" name="build_soong" remote="a3lab" groups="pdk,tradefed" revision="ricedroid-13" clone-depth="1">
+        <linkfile src="root.bp" dest="Android.bp" />
+        <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+    </project>
+    <project path="hardware/interfaces" name="android_hardware_interfaces" groups="pdk" remote="a3lab" revision="lineage-20.0" clone-depth="1" />
+    <project path="system/libhidl" name="android_system_libhidl" remote="a3lab" revision="lineage-20.0" clone-depth="1" />
+    <project path="vendor/lineage" name="android_vendor_rice" remote="a3lab" revision="thirteen" clone-depth="1" />
+    <project path="vendor/xiaomi/dirac" name="vendor_xiaomi_dirac" remote="a3lab" clone-depth="1" />
+</manifest>
