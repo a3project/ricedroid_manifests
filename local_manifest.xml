@@ -20,6 +20,7 @@
     <remove-project name="LineageOS/android_hardware_interfaces" />
     <remove-project name="RiceDroid/android_build_soong" />
     <remove-project name="RiceDroid/android_vendor_rice" />
+    <remove-project name="RiceDroid/android_vendor_RiceDroidOTA" />
 
     <!-- Device -->
     <project path="device/xiaomi/rosy" name="ricedroid_device_rosy" remote="ashub" revision="thirteen" clone-depth="1" />
@@ -41,5 +42,6 @@
     <project path="hardware/interfaces" name="android_hardware_interfaces" groups="pdk" remote="a3lab" revision="lineage-20.0" clone-depth="1" />
     <project path="system/libhidl" name="android_system_libhidl" remote="a3lab" revision="lineage-20.0" clone-depth="1" />
     <project path="vendor/lineage" name="android_vendor_rice" remote="a3lab" revision="thirteen" clone-depth="1" />
+    <project path="vendor/riceOTA" name="android_vendor_RiceDroidOTA" remote="a3lab" revision="thirteen" clone-depth="1" />
     <project path="vendor/xiaomi/dirac" name="vendor_xiaomi_dirac" remote="a3lab" clone-depth="1" />
 </manifest>
