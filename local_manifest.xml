@@ -32,7 +32,7 @@
     <project path="vendor/xiaomi/rosy" name="android_vendor_xiaomi_rosy" remote="a3hub" clone-depth="1" />
 	
     <!-- Compiler -->
-    <!--<project path="prebuilts/clang/host/linux-x86/proton-clang" name="proton-clang" remote="a3hub" revision="master" clone-depth="1" />-->
+    <project path="prebuilts/clang/host/linux-x86/clang-proton" name="proton-clang" remote="a3hub" revision="master" clone-depth="1" />
 
     <!-- Extra -->
     <project path="build/soong" name="build_soong" remote="a3lab" groups="pdk,tradefed" revision="ricedroid-13" clone-depth="1">
