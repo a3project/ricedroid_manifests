@@ -19,7 +19,7 @@
     <remove-project name="LineageOS/android_system_libhidl" />
     <remove-project name="LineageOS/android_hardware_interfaces" />
     <remove-project name="RiceDroid/android_build_soong" />
-    <remove-project name="RiceDroid/android_vendor_rice" />
+    <!--<remove-project name="RiceDroid/android_vendor_rice" />-->
     <remove-project name="RiceDroid/android_vendor_RiceDroidOTA" />
 
     <!-- Device -->
