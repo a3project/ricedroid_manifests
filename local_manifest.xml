@@ -14,6 +14,9 @@
             revision="android-13" />
     <remote name="extrahub"
             fetch="https://github.com" />
+    <remote name="extralab"
+            fetch="https://gitlab.com" />
+
 
     <!-- Remove -->
     <remove-project name="LineageOS/android_system_libhidl" />
@@ -32,7 +35,8 @@
     <project path="vendor/xiaomi/rosy" name="android_vendor_xiaomi_rosy" remote="a3hub" clone-depth="1" />
 	
     <!-- Compiler -->
-    <project path="prebuilts/clang/host/linux-x86/clang-proton" name="proton-clang" remote="a3hub" revision="master" clone-depth="1" />
+    <!--<project path="prebuilts/clang/host/linux-x86/clang-proton" name="proton-clang" remote="a3hub" revision="master" clone-depth="1" />-->
+    <project path="prebuilts/clang/host/linux-x86/clang-azure" name="azure-clang" remote="extralab" revision="main" clone-depth="1" />
 
     <!-- Extra -->
     <project path="build/soong" name="build_soong" remote="a3lab" groups="pdk,tradefed" revision="ricedroid-13" clone-depth="1">
@@ -42,7 +46,7 @@
     <project path="hardware/interfaces" name="android_hardware_interfaces" groups="pdk" remote="a3lab" revision="lineage-20.0" clone-depth="1" />
     <project path="packages/apps/Gallery2" name="LineageOS/android_packages_apps_Gallery2" groups="pdk-fs" remote="extrahub" />
     <project path="system/libhidl" name="android_system_libhidl" remote="a3lab" revision="lineage-20.0" clone-depth="1" />
-    <!--<project path="vendor/lineage" name="android_vendor_rice" remote="a3lab" revision="thirteen" clone-depth="1" />-->
+    <project path="vendor/lineage" name="android_vendor_rice" remote="a3lab" revision="thirteen" clone-depth="1" />
     <project path="vendor/riceOTA" name="android_vendor_RiceDroidOTA" remote="a3lab" revision="thirteen" clone-depth="1" />
     <project path="vendor/xiaomi/dirac" name="vendor_xiaomi_dirac" remote="a3lab" clone-depth="1" />
 </manifest>
