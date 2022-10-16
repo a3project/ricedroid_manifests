@@ -37,6 +37,7 @@
     <!-- Compiler -->
     <project path="prebuilts/clang/host/linux-x86/clang-proton" name="proton-clang" remote="a3hub" revision="master" clone-depth="1" />
     <!--<project path="prebuilts/clang/host/linux-x86/clang-azure" name="Panchajanya1999/azure-clang" remote="extralab" revision="main" clone-depth="1" />-->
+    <project path="prebuilts/clang/host/linux-x86/clang-r437112b" name="arrowos-project/android_prebuilts_clang_host_linux-x86_clang-r437112b" remote="extralab" revision="master" />
 
     <!-- Extra -->
     <project path="build/soong" name="build_soong" remote="a3lab" groups="pdk,tradefed" revision="ricedroid-13" clone-depth="1">
